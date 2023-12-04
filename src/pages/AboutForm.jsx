@@ -1,7 +1,13 @@
 import Button from "../ui/Button";
 import { HiOutlineIdentification } from "react-icons/hi2";
+import { cvData } from "../hooks/Store";
 
 function AboutForm() {
+  const { about, setAbout } = cvData((state) => ({
+    about: state.about,
+    setAbout: state.setAbout,
+  }));
+
   return (
     <div className="flex h-full flex-col">
       <div className="mb-4 flex items-center justify-center gap-4 text-xl font-semibold">
@@ -13,21 +19,35 @@ function AboutForm() {
           type="text"
           placeholder="Name"
           className="mb-2 w-full rounded-full py-1 pl-9"
+          value={about.name || ""}
+          onChange={(event) => setAbout({ ...about, name: event.target.value })}
         />
         <input
           type="text"
           placeholder="Last Name"
           className="mb-2 w-full rounded-full py-1 pl-9"
+          value={about.lastName || ""}
+          onChange={(event) =>
+            setAbout({ ...about, lastName: event.target.value })
+          }
         />
         <input
           type="text"
           placeholder="Professional Title"
           className="mb-2 w-full rounded-full py-1 pl-9"
+          value={about.professionalTitle || ""}
+          onChange={(event) =>
+            setAbout({ ...about, professionalTitle: event.target.value })
+          }
         />
         <textarea
           type="text-area"
           placeholder="About you"
           className=" mb-2 h-24 max-h-28 w-full resize-y py-1 pl-9"
+          value={about.aboutYou || ""}
+          onChange={(event) =>
+            setAbout({ ...about, aboutYou: event.target.value })
+          }
         />
       </div>
 
