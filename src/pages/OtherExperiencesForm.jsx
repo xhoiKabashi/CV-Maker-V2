@@ -18,7 +18,7 @@ function OtherExperiencesForm() {
       setOtherExperience: state.setOtherExperience,
     }));
 
-  console.log(otherExperience);
+
   const [other, setOther] = useState(false);
   function handleOther() {
     setOther(!other);

@@ -19,16 +19,14 @@ export const cvData = create((set) => ({
   otherExperience: {},
   setOtherExperience: (otherExperienceData) =>
     set({ otherExperience: otherExperienceData }),
+  skills: {},
+  setSkills: (skillsData) => set({ skills: skillsData }),
+  hobbies: {},
+  setHobbies: (hobbiesData) => set({ hobbies: hobbiesData }),
+  languages: {},
+  setLanguages: (languageData) => set({ languages: languageData }),
+  image: {},
+  setImage: (imageData) => set({ image: imageData }),
+  handlePrint: null,
+  setHandlePrint: (handlePrint) => set({ handlePrint }),
 }));
-
-// contact: {},
-// education: {},aboutData
-// otherEducation: {},
-// work: {},
-// otherWork: {},
-// expTrainings: {},
-// otherExpTrainings: {},
-// skills: {},
-// hobbies: {},
-// languages: {},
-// image: {},

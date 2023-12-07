@@ -9,7 +9,6 @@ function ContactForm() {
     setContact: state.setContact,
   }));
 
-  console.log(contact);
   return (
     <div className="flex h-full flex-col">
       <div className="mb-4 flex items-center justify-center gap-4 text-xl font-semibold">
