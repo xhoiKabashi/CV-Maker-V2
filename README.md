@@ -12,6 +12,7 @@ This CV Generator is a web application that allows users to create professional-
  Live Preview
 # https://cv-maker-al.netlify.app/
 
+![image](https://github.com/xhoiKabashi/CV-Maker-V2/assets/100515180/60f2d451-caca-4af1-9be7-cb713ed7b06f)
 
 
 
