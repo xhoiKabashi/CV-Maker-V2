@@ -21,6 +21,7 @@ function AboutForm() {
           className="mb-2 w-full rounded-full py-1 pl-9"
           value={about.name || ""}
           onChange={(event) => setAbout({ ...about, name: event.target.value })}
+          required
         />
         <input
           type="text"
@@ -30,6 +31,7 @@ function AboutForm() {
           onChange={(event) =>
             setAbout({ ...about, lastName: event.target.value })
           }
+          required
         />
         <input
           type="text"
@@ -39,6 +41,7 @@ function AboutForm() {
           onChange={(event) =>
             setAbout({ ...about, professionalTitle: event.target.value })
           }
+          required
         />
         <textarea
           type="text-area"
@@ -48,6 +51,7 @@ function AboutForm() {
           onChange={(event) =>
             setAbout({ ...about, aboutYou: event.target.value })
           }
+          required
         />
       </div>
 

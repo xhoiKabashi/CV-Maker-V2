@@ -27,6 +27,7 @@ function CvRightSide() {
     experienceTitle,
     startingDate: expStartingDate,
   } = experience;
+
   // const {
   //   endingDate: otherExpEndingDate,
   //   eventName: otherEventName,
@@ -94,9 +95,11 @@ function CvRightSide() {
             Experience
           </h1>
         )}
-        <p className="font-semibold">
-          {expStartingDate && { expStartingDate } - { expEndingDate }}
-        </p>
+        {expStartingDate && (
+          <p className="font-semibold">
+            {expStartingDate} - {expEndingDate}
+          </p>
+        )}
         <p className="font-semibold text-slate-600">{eventName}</p>
         <p className="font-bold">{experienceTitle}</p>
         <p className="pt-1 text-sm text-slate-700">{experienceDescription}</p>

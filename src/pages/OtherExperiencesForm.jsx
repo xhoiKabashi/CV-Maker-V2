@@ -18,7 +18,6 @@ function OtherExperiencesForm() {
       setOtherExperience: state.setOtherExperience,
     }));
 
-
   const [other, setOther] = useState(false);
   function handleOther() {
     setOther(!other);
@@ -58,7 +57,7 @@ function OtherExperiencesForm() {
             }
           />
           <input
-            type="text"
+            type="number"
             placeholder="Starting Date"
             className="mb-2 w-full rounded-full py-1 pl-9"
             value={experience.startingDate || ""}
@@ -70,7 +69,7 @@ function OtherExperiencesForm() {
             }
           />
           <input
-            type="text"
+            type="number"
             placeholder="Ending Date"
             className="mb-2 w-full rounded-full py-1 pl-9"
             value={experience.endingDate || ""}
